@@ -1,0 +1,180 @@
+
+body {
+	background-color: #EEEEEE;
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	text-align: center;
+	overflow: auto;
+	padding-bottom: 100px;
+	}
+
+.intro{
+	text-align: center;
+	margin-top: 0px;
+	font-family: "Bookman", sans-serif;
+	border: 1px solid black;
+	color: black;
+	font-size: 25px;
+}
+
+.biography{
+	position: relative;
+	bottom: 100px;
+}
+
+.main-nav{
+	float: center;
+	list-style: none;
+	margin-top: 30px;
+}
+
+.main-nav li{
+	display: inline-block;
+}
+
+.main-nav li a{
+	color: black;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+}
+
+.main-nav li.active a{
+	border: 1px solid black;
+}
+
+.main-nav li a:hover{
+	border: 1px solid black;
+}
+
+
+h2{
+	text-transform: uppercase;
+	font-size: 70px;
+	text-align: center;
+	margin-top: 150px;
+	font-family: "Bookman", sans-serif;
+	color: black;
+   }
+
+
+.music{
+	width: 200px;
+	position: relative;
+	bottom: 80px;
+	right: 0px;
+	top: 100px;
+}
+
+
+
+figure{
+  margin: auto;
+  width: 70%;
+  padding: 5px;
+}
+
+.picture{
+	display: table;
+	max-width: 100%;
+	height: auto;
+	margin:auto;
+	width: 100%;
+	padding: 10px;
+}
+
+
+img {
+max-width: 20%;
+height: auto;
+}
+
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+
+.centerScreen {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+
+.table{
+	margin: auto;
+	width: 70%;
+	padding: 10px;
+}
+
+
+.quote{
+	height: 100%;
+	margin: auto;
+	width: 60%;
+	font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    margin: auto;;
+    padding: 10px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+}
+
+form{
+	margin: auto;
+	width: 60%;
+	padding: 10px;
+}
+
+.videowrapper{
+	position: relative;
+	padding-bottom: 55%;
+	padding-top: 10px;
+	height: 0px;
+}
+
+.videowrapper iframe{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px:
+	bottom: 0px;
+	height: 100%;
+	width: 100%;
+	
+}
+
+footer{
+   position: relative;
+   left: 0;
+   bottom: 0;
+   background-color: #525252;
+   color: white;
+   text-align: center;
+   
+   border-left-style: solid;
+   border-right-style: solid;
+   border-top-width: 0px;
+   border-top-style: solid;
+   bottom: -241px;
+}
+
+canvas{
+	border:1px solid black;
+	position: relative;
+}
+
+#myBtn{
+	background: #3498db;
+	font-family: "Roboto", sans-serif;
+	font-size: 35px;
+	border-radius: 50%;
+}
+
+

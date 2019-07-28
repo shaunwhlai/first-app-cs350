@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=tel], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4b5254;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+textarea{
+	width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit]:hover {
+  background-color: #4b5254;
+}
+
+.form-style {
+	padding: 20px;
+	margin: auto;
+	width: 60%;
+	padding: 10px;
+}
+</style>
+  <head>
+	<meta charset="UTF-8">
+	<title>Shaun's Biography</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script>
+		function submission(){
+			return confirm('Thank you for submitting!')
+		}
+		// function myFunction() {
+		//   var inpObj = document.getElementById("userform");
+		//   if (!inpObj.checkValidity()) {
+		// 	document.getElementById("demo").innerHTML = inpObj.validationMessage;
+		//   } else {
+		// 	document.getElementById("demo").innerHTML = "Thank you for submitting!";
+		//   } 
+		// } 
+	</script>
+  </head>
+  <body>
+	<header>
+		<div class="row">
+			<ul class="main-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="quotes.html">Quotes</a></li>
+				<li><a href="holidays.html">Holidays</a></li>
+				<li><a href="schedule.html">Schedule</a></li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="feedback.html">Feedback</a></li>
+				<li><a href="game.html">Game</a></li>
+			</ul>
+		</div>
+	</header>
+		<div class="form-style">
+			<h2>Feedback Information</h2>
+			<form id="userform" method="POST" onsubmit="sendEmail(event);">
+				<label for="fname">First Name</label>
+					<input type="text" name="first-name" id="fname" size="15" placeholder="Your first name.."required><br>
+				<label for="fname">Last Name</label>
+					<input type="text" name="last-name" id="lname" size="15" placeholder="Your last name.."required><br>
+				<label for="address">Address</label>
+					<input type="text" name="address" id="address" size="15" placeholder="Enter your address.."required><br>
+				<label for="phone">Phone #</label>
+					<input type="tel" name= "phone" id="phone" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}$" size="15" placeholder="Format ###-###-####"><br>
+				<label for="email">Email</label>
+					<input type="email" name="email" id="email" size="15" placeholder="Enter your email.." required><br>
+				Comments:
+				<textarea rows="4" cols="50" name="comment" form="userform" placeholder="Enter feedback here..."></textarea>
+				<br>
+				<input type="submit"  value="Send"/>
+			</form>
+		</div>
+		<footer>
+			<p> Created by: Shaun Lai</p>
+			<p> Contact information: <a href="mailto: shaun.lai@siu.edu">shaun.lai@siu.edu</a></p>
+		</footer>
+  </body>
+</html>
