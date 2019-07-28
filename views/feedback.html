@@ -94,7 +94,8 @@ input[type=submit]:hover {
 	</header>
 		<div class="form-style">
 			<h2>Feedback Information</h2>
-			<form id="userform" method="POST" onsubmit="sendEmail(event);">
+			{{msg}}
+			<form id="userform" method="POST" action="send">
 				<label for="fname">First Name</label>
 					<input type="text" name="first-name" id="fname" size="15" placeholder="Your first name.."required><br>
 				<label for="fname">Last Name</label>
@@ -108,12 +109,13 @@ input[type=submit]:hover {
 				Comments:
 				<textarea rows="4" cols="50" name="comment" form="userform" placeholder="Enter feedback here..."></textarea>
 				<br>
-				<input type="submit"  value="Send"/>
+				<button type="submit" id="submit" name="submit"></button>
 			</form>
 		</div>
 		<footer>
 			<p> Created by: Shaun Lai</p>
-			<p> Contact information: <a href="mailto: shaun.lai@siu.edu">shaun.lai@siu.edu</a></p>
+			<p> Contact information: <a href="mailto: shaun.lai@siu.edu">shaun.lai@siu.edu</a>
+			</p>
 		</footer>
   </body>
 </html>
