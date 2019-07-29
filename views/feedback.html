@@ -68,14 +68,14 @@ input[type=submit]:hover {
 		function submission(){
 			return confirm('Thank you for submitting!')
 		}
-		// function myFunction() {
-		//   var inpObj = document.getElementById("userform");
-		//   if (!inpObj.checkValidity()) {
-		// 	document.getElementById("demo").innerHTML = inpObj.validationMessage;
-		//   } else {
-		// 	document.getElementById("demo").innerHTML = "Thank you for submitting!";
-		//   } 
-		// } 
+		function myFunction() {
+		  var inpObj = document.getElementById("userform");
+		  if (!inpObj.checkValidity()) {
+			document.getElementById("demo").innerHTML = inpObj.validationMessage;
+		  } else {
+			document.getElementById("demo").innerHTML = "Thank you for submitting!";
+		  } 
+		} 
 	</script>
   </head>
   <body>
@@ -94,7 +94,6 @@ input[type=submit]:hover {
 	</header>
 		<div class="form-style">
 			<h2>Feedback Information</h2>
-			{{msg}}
 			<form id="userform" method="POST" action="send">
 				<label for="fname">First Name</label>
 					<input type="text" name="first-name" id="fname" size="15" placeholder="Your first name.."required><br>
@@ -109,7 +108,7 @@ input[type=submit]:hover {
 				Comments:
 				<textarea rows="4" cols="50" name="comment" form="userform" placeholder="Enter feedback here..."></textarea>
 				<br>
-				<button type="submit" id="submit" name="submit"></button>
+				<input type="submit" onclick="myFunction();" value="Submit" />
 			</form>
 		</div>
 		<footer>
