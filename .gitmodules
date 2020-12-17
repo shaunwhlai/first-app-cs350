@@ -1,0 +1,3 @@
+[submodule "feedback-server"]
+	path = feedback-server
+	url = https://github.com/shaunwhlai/feedback-server.git
